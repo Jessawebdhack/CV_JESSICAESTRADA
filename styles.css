@@ -11,7 +11,7 @@ body{
     height: 200vh;
     row-gap: 20px;
     column-gap: 20px;
-    grid-template-columns: 0.05fr 1fr 1fr 1fr;
+    grid-template-columns: 0.8fr .5fr 1fr 1fr;
     grid-template-rows: 70px 50px .3fr 2fr .7fr 1fr;
     grid-template-areas:
         "aside aside header header" 
@@ -22,7 +22,7 @@ body{
         "footer footer s4 s1";
 }
 .subt{
-    color:#F68381;
+    color:#e59291;
     font-size: 18px;
 }
 h2{
@@ -49,7 +49,7 @@ header{
 }
 #micv{
     grid-area:header;
-    color: rgb(245, 174, 174);
+    color: #F68381;
     text-align: center;
     margin:0;
 }
@@ -143,11 +143,11 @@ aside{
     grid-area:s1;
     padding: 50px;
 }
-#Photo_2{
+/*#Photo_2{
     height: auto;
     padding: 50px;
     transform: rotate(0.25turn);
-}
+}*/
 .s2{
     background-color: whitesmoke;
     grid-area:s2;
@@ -168,7 +168,11 @@ footer{
     grid-area: footer;
     padding: 50px;
 }
-
+/*footer.toggle_btn{
+        Size: large;
+        align-items: first baseline;
+    }*/
+}
 @media only screen and (max-width:700px){
   .container{
     grid-template-columns: 1fr;
