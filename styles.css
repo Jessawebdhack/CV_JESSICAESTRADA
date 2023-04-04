@@ -1,28 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,300&display=swap');
 body{
     height: 100vh;
-    background-color: rgb(216, 245, 218);
+    background-color: white;
     border-radius: 80px;
 }
 .container{
     font-family: 'Kanit', sans-serif;
-    padding: 20px;
+    padding: 40px;
     display: grid;
     height: 200vh;
     row-gap: 20px;
     column-gap: 20px;
     grid-template-columns: 0.05fr 1fr 1fr 1fr;
-    grid-template-rows: 70px 50px .5fr 2fr .5fr 1fr;
+    grid-template-rows: 70px 50px .3fr 2fr .7fr 1fr;
     grid-template-areas:
         "aside aside header header" 
         "aside aside nav nav"
         "aside aside main main"
         "aside aside s2 s3"
         "aside aside s4 s1"
-        "footer footer footer s1";
+        "footer footer s4 s1";
+}
+.subt{
+    color:#F68381;
+    font-size: 18px;
+}
+h2{
+    color:#F68381;
+}
+h3{
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    color: #F68381;
+}
+.dates{
+    color:black;
+    font-size: 12px;
 }
 .paragraphs{
-    color:black;
+    color:#000;
     font-size: 17px;
 }
 header{
@@ -32,12 +49,12 @@ header{
 }
 #micv{
     grid-area:header;
-    color: rgb(207, 171, 171);
+    color: rgb(245, 174, 174);
     text-align: center;
     margin:0;
 }
 nav{
-    background-color: whitesmoke;
+    background-color: white;
     grid-area:nav;
     font-size:small;
     color: rgb(196, 110, 36);
@@ -52,20 +69,21 @@ nav{
     display: flex;
     align-items:center;
     justify-content: flex-end;
+    color:rgb(245, 174, 174);
 }
 .navbar .links{
     display: flex ;
     gap: 2rem;
 }
 .navbar .toggle_btn{
-    color: #F23D3D;
+    color:rgb(245, 174, 174);
     font-size: 1.5rem;
     cursor: pointer;
     padding-left: 20px;
 }
 .action_btn{
     background-color: rgb(207, 171, 171);
-    color: rgb(196, 110, 36);
+    color: #f07e7e;
     padding: 5px;
     border: none;
     outline: none;
@@ -88,7 +106,7 @@ li{
 a{
     text-decoration: none;
     font-size:small;
-    color:#F23D3D
+    color:#923434*/
 }
 a:hover{
     color:#000;
@@ -96,13 +114,13 @@ a:hover{
 main{
     background-color: whitesmoke;
     grid-area:main;
-    padding: 20px;
+    padding: 40px;
 }
 #me{
     margin-top: 3px;
     margin-bottom: 3px;
     text-align:justify;
-    font-size: 90px;
+    font-size: 60px;
     color: #F23D3D;
     padding-left: 10px;
 }
@@ -111,40 +129,44 @@ main{
 
 }*/
 aside{
-    background-color: whitesmoke;
+    background-color: white;
     grid-area:aside;
-    padding: 20px;
+    padding: 50px;
 }
-.Photo{
+#Photo{
     float: none;
     width: 100%;
     height: auto;
-   /* padding-left: 20%;*/
 }
 .s1{
-    background-color: rgb(245, 205, 160);
+    background-color: whitesmoke;
     grid-area:s1;
-    padding: 20px;
+    padding: 50px;
+}
+#Photo_2{
+    height: auto;
+    padding: 50px;
+    transform: rotate(0.25turn);
 }
 .s2{
-    background-color: rgb(243, 162, 162);
+    background-color: whitesmoke;
     grid-area:s2;
-    padding: 20px;
+    padding: 50px;
 }
 .s3{
-    background-color: rgb(255, 129, 129);
+    background-color: whitesmoke;
     grid-area:s3;
-    padding: 20px;
+    padding: 50px;
 }
 .s4{
-    background-color: rgb(255, 129, 129);
+    background-color:whitesmoke;
     grid-area:s4;
-    padding: 20px;
+    padding: 50px;
 }
 footer{
-    background-color: lightsalmon;
+    background-color: white;
     grid-area: footer;
-    padding: 20px;
+    padding: 50px;
 }
 
 @media only screen and (max-width:700px){
