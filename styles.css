@@ -100,7 +100,7 @@ nav{
 .action_btn:active {
     scale: 0.95;
 }
-li{
+.links{
     list-style: none;
 }
 a{
